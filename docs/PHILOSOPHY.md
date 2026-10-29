@@ -2,7 +2,7 @@
 
 **Situation and problem.** In traditional software development, much important knowledge never really lives in the project; it is scattered across people's heads, code, meetings and ad-hoc conversations. Requirements, design, system structure and concrete implementation also blur together easily: an idea lands quickly in code, and an implementation choice gradually comes to define the system itself. The larger and longer-lived a project, the more understanding it turns into understanding the code; individuals forget their earlier judgments over time, and different people on a team hold different information.
 
-AI changes this relationship. Once code can be generated, modified and refactored quickly, code itself becomes cheap, and what is truly scarce is the project's vision, decisions and direction: understanding the problem, forming the design, building structure, making trade-offs, and judging whether the result matches the original intent. In the past these were held mainly by people, while AI saw only the code and conversation in front of it.
+AI changes this relationship. Once code can be generated, modified and refactored quickly, code itself becomes cheap, and what really matters is holding on to the project's vision, decisions and direction: understanding the problem, forming the design, building structure, making trade-offs, and judging whether the result matches the original intent. In the past these were held mainly by people, while AI saw only the code and conversation in front of it.
 
 **Needs and ideas.** We therefore want a method built from the start for humans and AI developing together. People no longer control a project mainly by operating on code directly, but express intent, design and judgment through more stable documents; AI refines and implements from this context while keeping code and documents consistent.
 
@@ -28,7 +28,7 @@ Structure is likewise the precondition for AI to maintain the documents. The pro
 
 **Principles and approach.**
 
-1. Code is getting cheaper; a project's vision, decisions and direction are what is scarce, and they should be recorded explicitly and given to both humans and AI.
+1. Code is getting cheaper; what really matters is holding on to a project's vision, decisions and direction, which should be recorded explicitly and given to both humans and AI.
 2. A project's important context should live in the project itself as far as possible, not in people's memories, ad-hoc conversations or one version of the code; memory is not mastery.
 3. Design, System Design and Implementation should keep clear levels of abstraction and stay decoupled: upper layers define semantics, lower layers decide how they are realized.
 4. The higher the layer, the more it is designed and written by humans; the lower, the more it is handed to AI. Humans own problems, intent, judgment and trade-offs; AI owns refinement, implementation, syncing and execution.
