@@ -2,7 +2,15 @@
 
 > 中文原版 / Chinese original: [mukidoc-zh](https://github.com/mukimasta/mukidoc-zh)
 
-Let a project keep its own intent, design and implementation context, so that humans and AI can keep collaborating.
+A documentation protocol for long-lived, complex projects: the project itself keeps its vision, decisions and design, so that humans and AI can keep collaborating.
+
+AI is making code cheap; what stays scarce is a project's vision, decisions and direction. MukiDoc keeps them in the repo in layers, Design → System Design → Implementation: the higher the layer, the more it is designed by humans; the lower, the more it is handed to AI. The AI therefore holds a global view of the project, not scattered memories, and the protocol tells it where each kind of knowledge belongs, so the docs stay clear and tidy over time.
+
+### How It Differs
+
+1. **Memory systems** (e.g. Cline Memory Bank) let AI remember what happened; MukiDoc lets AI understand what the project is, why it is designed this way and where it stands now.
+2. **Spec-driven development** (e.g. GitHub Spec Kit, Kiro) works feature by feature and prescribes a spec → plan → implement workflow; MukiDoc manages the long-term knowledge of the whole project, prescribes no fixed workflow, and only constrains what each kind of knowledge means, where it lives and how it relates.
+3. **Convention files** such as AGENTS.md / CLAUDE.md usually record commands and code style; MukiDoc uses AGENTS.md as the protocol entry point and keeps project knowledge in the layered structure under `docs/`.
 
 ### Initializing a Project
 

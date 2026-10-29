@@ -66,3 +66,14 @@
 4. A real-project review exposed that the protocol's skeleton requirements did not match expected usage: the original "create on demand" let a missing Information category directory and TODO still be judged normal. Made explicit that base directories and skeleton documents must exist even when temporarily empty, while Areas, Evaluation Suites and optional documents continue to be created on demand; the specification and protocol were corrected accordingly.
 5. Implemented the in-repo `mukidoc-init` Skill, version 0.1.0, with a standalone bootstrap script, skeleton templates and a versioned AGENTS.md. Completed the Design, System Design, Implementation and evaluation definitions of Bootstrap; bootstrap preserves existing files, an older protocol is backed up and then replaced only after explicit confirmation, and unversioned, same-version-modified and newer-version cases are handled separately.
 6. The bootstrap deliverable passed 18 temporary-project tests, a resource export consistency check and a Skill structure validation, verifying the complete skeleton, repeated runs, version recognition, backup and standalone distribution. The update-confirmation behavior in real conversations remains to be verified; this round did not install a personal Skill or migrate an external project.
+
+### 2026-10-29
+
+1. Re-stated MukiDoc's positioning: a documentation protocol for long-lived, complex projects. AI makes code cheap, and what is scarce is a project's vision, decisions and direction; MukiDoc hands these to AI in layers, giving it a global view rather than scattered memories.
+
+2. Made the human-to-AI authorship gradient explicit: the higher the layer, the more humans design and write it themselves; the lower, the more it is handed to AI. PHILOSOPHY, OVERVIEW and README were updated accordingly, and README gained a comparison with memory systems, spec-driven development and convention files.
+
+3. Recorded "an AI with a global view judges better" as an unverified Philosophy-level commitment and created the global_view Evaluation, which has only informal evidence so far.
+
+4. Published the Chinese repo mukidoc-zh and the English repo mukidoc as v0.1.0, with the Chinese version as the single source.
+
