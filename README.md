@@ -2,9 +2,9 @@
 
 > 中文原版 / Chinese original: [mukidoc-zh](https://github.com/mukimasta/mukidoc-zh)
 
-A documentation protocol for long-lived, complex projects: the project itself keeps its vision, decisions and design, so that humans and AI can keep collaborating.
+**A structured documentation protocol designed for large projects.**
 
-AI is making code cheap; what stays scarce is a project's vision, decisions and direction. MukiDoc keeps them in the repo in layers, Design → System Design → Implementation: the higher the layer, the more it is designed by humans; the lower, the more it is handed to AI. The AI therefore holds a global view of the project, not scattered memories, and the protocol tells it where each kind of knowledge belongs, so the docs stay clear and tidy over time.
+MukiDoc uses structured documents to keep a project's high-level context, such as its philosophy, architecture and roadmap, together with the core design-chain documents across three layers: Design → System Design → Implementation. The MukiDoc protocol gives these documents a clear structure; following it, AI grasps the project as a whole and maintains the documents as it writes code, keeping them clear, elegant and tidy.
 
 ### How It Differs
 
