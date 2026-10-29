@@ -1,0 +1,4 @@
+interface:
+  display_name: "MukiDoc Init"
+  short_description: "Bootstrap the fixed MukiDoc skeleton, preserve existing content, and detect protocol version updates"
+  default_prompt: "Use $mukidoc-init to bootstrap MukiDoc in the current project and check whether the existing AGENTS.md needs an update."
