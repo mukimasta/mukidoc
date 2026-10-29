@@ -71,7 +71,7 @@
 
 1. Re-stated MukiDoc's positioning: a structured documentation protocol designed for large projects. AI makes code cheap, and what is scarce is a project's vision, decisions and direction; MukiDoc hands these to AI in layers, giving it a global view rather than scattered memories.
 
-2. Made the human-to-AI authorship gradient explicit: the higher the layer, the more humans design and write it themselves; the lower, the more it is handed to AI. PHILOSOPHY, OVERVIEW and README were updated accordingly, and README gained a comparison with memory systems, spec-driven development and convention files.
+2. Made the human-to-AI authorship gradient explicit: the higher the layer, the more humans design and write it themselves; the lower, the more it is handed to AI. PHILOSOPHY, OVERVIEW and README were updated accordingly.
 
 3. Published the Chinese repo mukidoc-zh and the English repo mukidoc as v0.1.0, with the Chinese version as the single source.
 

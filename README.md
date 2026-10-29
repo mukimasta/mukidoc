@@ -6,12 +6,6 @@
 
 MukiDoc uses structured documents to keep a project's high-level context, such as its philosophy, architecture and roadmap, together with the core design-chain documents across three layers: Design → System Design → Implementation. The MukiDoc protocol gives these documents a clear structure; following it, AI grasps the project as a whole and maintains the documents as it writes code, keeping them clear, elegant and tidy.
 
-### How It Differs
-
-1. **Memory systems** (e.g. Cline Memory Bank) let AI remember what happened; MukiDoc lets AI understand what the project is, why it is designed this way and where it stands now.
-2. **Spec-driven development** (e.g. GitHub Spec Kit, Kiro) works feature by feature and prescribes a spec → plan → implement workflow; MukiDoc manages the long-term knowledge of the whole project, prescribes no fixed workflow, and only constrains what each kind of knowledge means, where it lives and how it relates.
-3. **Convention files** such as AGENTS.md / CLAUDE.md usually record commands and code style; MukiDoc uses AGENTS.md as the protocol entry point and keeps project knowledge in the layered structure under `docs/`.
-
 ### Initializing a Project
 
 The repository provides `skills/mukidoc-init/`, containing the initialization Skill, scripts and the complete protocol template. The first version of both the Skill and the protocol is **0.1.0**.
