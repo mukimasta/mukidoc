@@ -1,6 +1,6 @@
 # MukiDoc
 
-> 中文原版 / Chinese original: mukidoc-zh
+> 中文原版 / Chinese original: [mukidoc-zh](https://github.com/mukimasta/mukidoc-zh)
 
 Let a project keep its own intent, design and implementation context, so that humans and AI can keep collaborating.
 
