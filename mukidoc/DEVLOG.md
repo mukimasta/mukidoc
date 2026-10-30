@@ -75,3 +75,4 @@
 
 3. Published the Chinese repo mukidoc-zh and the English repo mukidoc as v0.1.0, with the Chinese version as the single source.
 
+4. Changed the documentation root from `docs/` to `mukidoc/` and bumped the protocol and Skill to 0.2.0. `docs/` is left for the project's own user documentation and articles. No legacy-layout detection or automatic migration; projects already on 0.1.0 stay as they are.

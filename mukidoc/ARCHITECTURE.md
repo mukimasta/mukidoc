@@ -177,14 +177,14 @@ Bootstrap only establishes structure and does not fill in project facts; keeping
 
 ## File Structure
 
-Base directories and skeleton documents are always created and kept, even when temporarily empty. The root README.md and AGENTS.md and the seven Project Context documents under docs are fixed files; the three design-chain layers, Information's four category directories and Evaluation's four commitment-source directories are fixed entry points. Areas, concrete design documents and files marked optional are created on demand. MukiCheck is not yet built and is not part of the current bootstrap requirements.
+Base directories and skeleton documents are always created and kept, even when temporarily empty. The root README.md and AGENTS.md and the seven Project Context documents under mukidoc are fixed files; the three design-chain layers, Information's four category directories and Evaluation's four commitment-source directories are fixed entry points. Areas, concrete design documents and files marked optional are created on demand. MukiCheck is not yet built and is not part of the current bootstrap requirements.
 
 ```text
 /
 ├── README.md
 ├── AGENTS.md
 │
-├── docs/
+├── mukidoc/
 │   ├── OVERVIEW.md
 │   ├── PHILOSOPHY.md
 │   ├── ARCHITECTURE.md

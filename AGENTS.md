@@ -1,6 +1,6 @@
 # MukiDoc Agent Protocol
 
-<!-- MukiDoc protocol version: 0.1.0 -->
+<!-- MukiDoc protocol version: 0.2.0 -->
 
 ## Role
 
@@ -24,12 +24,14 @@ Documents and engineering evolve together. Documents express design intent and p
 
 ### Project Map
 
-The root `README.md` is for users and handles presentation, onboarding and navigation; the root `AGENTS.md` is the Agent working protocol. Formal project knowledge lives in `docs/`:
+The root `README.md` is for users and handles presentation, onboarding and navigation; the root `AGENTS.md` is the Agent working protocol. Formal project knowledge lives in `mukidoc/`:
 
 1. Project Context: `OVERVIEW.md`, `PHILOSOPHY.md`, `ARCHITECTURE.md`, `ROADMAP.md`, `DECISION.md`, `DEVLOG.md`, `TODO.md`. They hold, respectively, the project definition, its philosophical foundation, overall structure, long-term evolution, the reasoning behind key judgments, development history and current actions.
 2. Design Chain: `design/`, `system_design/`, `implementation/`. They hold, respectively, the object design, the internal system mechanisms and the current concrete engineering implementation.
 3. Information: `information/`, holding raw materials, external information, investigation evidence and exploration. It sits alongside Project Context.
 4. Evaluation: `evaluation/`, holding the goals, methods, criteria and judgments for the commitments the project itself makes.
+
+`mukidoc/` holds only MukiDoc project knowledge. `docs/` is not part of MukiDoc: the project's user-facing documentation, articles or documentation site can live there by convention, alongside `mukidoc/`.
 
 The base directories and skeleton documents below must be created and kept. When initializing or migrating a project into MukiDoc, fill in the whole skeleton even if there is no content yet; it provides stable entry points to knowledge. Source code, tests, scripts and the like continue to use whatever engineering structure suits the project.
 
@@ -37,7 +39,7 @@ The base directories and skeleton documents below must be created and kept. When
 /
 ├── README.md
 ├── AGENTS.md
-└── docs/
+└── mukidoc/
     ├── OVERVIEW.md
     ├── PHILOSOPHY.md
     ├── ARCHITECTURE.md
@@ -60,7 +62,7 @@ The base directories and skeleton documents below must be created and kept. When
         └── implementation/
 ```
 
-The fixed skeleton is handled separately from on-demand content. The root README.md and AGENTS.md, the seven Project Context documents under docs, and every directory in the tree above must exist. A skeleton document that has no content yet may contain just its title; never invent facts, decisions or to-dos to fill a file, and remember that a file's existence does not mean its content is complete. Empty directories in a Git project are kept with `.gitkeep`, which is not a project knowledge document.
+The fixed skeleton is handled separately from on-demand content. The root README.md and AGENTS.md, the seven Project Context documents under mukidoc, and every directory in the tree above must exist. A skeleton document that has no content yet may contain just its title; never invent facts, decisions or to-dos to fill a file, and remember that a file's existence does not mean its content is complete. Empty directories in a Git project are kept with `.gitkeep`, which is not a project knowledge document.
 
 Areas within each layer, specific design documents, Evaluation Suites, and optional documents such as `DATA_MODEL.md`, `RUNTIME.md`, `TECH_STACK.md` and `API.md` are still created on demand. When checking structure, report and fill in any missing fixed skeleton; a missing optional item does not automatically count as a problem.
 
@@ -229,7 +231,7 @@ Execute bottom-up: do cheap, deterministic, local checks first, then move on to 
 
 ### Organizing Evaluation and Evidence
 
-The project's own evaluations are placed under `docs/evaluation/philosophy/`, `design/`, `system_design/` and `implementation/` according to the source of the commitment. Each independent topic gets an `<layer>/<evaluation_name>/EVALUATION.md`, which states at least:
+The project's own evaluations are placed under `mukidoc/evaluation/philosophy/`, `design/`, `system_design/` and `implementation/` according to the source of the commitment. Each independent topic gets an `<layer>/<evaluation_name>/EVALUATION.md`, which states at least:
 
 1. Claim: which commitment is being verified.
 2. Scope: what range it covers.
@@ -238,7 +240,7 @@ The project's own evaluations are placed under `docs/evaluation/philosophy/`, `d
 
 The source of a commitment and the Scope are two independent dimensions. Scope may be Module, Integration, System / End-to-End or Long-term; a high-level commitment can be supported by low-level evidence, and a low-level problem may need a broad run to be found. Split scopes or scenarios only when there is a real difference; a simple Suite can stay in one file.
 
-`docs/evaluation/` holds goals, methods, criteria and traceable judgments, while execution code goes in a natural engineering location, and may use tests, evals, benchmarks, scripts, CI, Agent tasks, human evaluation or real usage results. Results need to state the corresponding evidence, run conditions and scope of validity, and parts lacking evidence remain unverified.
+`mukidoc/evaluation/` holds goals, methods, criteria and traceable judgments, while execution code goes in a natural engineering location, and may use tests, evals, benchmarks, scripts, CI, Agent tasks, human evaluation or real usage results. Results need to state the corresponding evidence, run conditions and scope of validity, and parts lacking evidence remain unverified.
 
 The Playground is for exploring the unknown, Tests check behavior and implementation constraints that are already clear, and Evaluation combines tests, experiments, runs and other evidence to judge commitments. A passing test is only evidence for its corresponding scope and cannot directly replace the evaluation of value or long-term effect.
 

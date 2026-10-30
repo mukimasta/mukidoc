@@ -4,7 +4,7 @@ Bootstrap establishes MukiDoc's fixed knowledge entry points for a new or existi
 
 ### Bootstrap result
 
-The root README.md and AGENTS.md, the seven Project Context documents under docs, and the directories for the three design-chain layers, the four Information categories and the four Evaluation commitment sources must all exist. A fixed document with no content yet keeps only its title, and empty directories must be preservable with the project. Areas, concrete design documents, Evaluation Suites and optional files are not pre-created; MukiCheck, which has not landed, is not part of bootstrap.
+The root README.md and AGENTS.md, the seven Project Context documents under mukidoc, and the directories for the three design-chain layers, the four Information categories and the four Evaluation commitment sources must all exist. A fixed document with no content yet keeps only its title, and empty directories must be preservable with the project. Areas, concrete design documents, Evaluation Suites and optional files are not pre-created; MukiCheck, which has not landed, is not part of bootstrap.
 
 Existing files are kept as they are, including skeleton documents that exist but are empty. Repeated bootstrap only fills in what is missing; it does not rewrite bodies or clean up existing content. Bootstrap does not generate project facts, infer intent, or automatically turn existing code into design commitments.
 

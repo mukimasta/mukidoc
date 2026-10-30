@@ -8,7 +8,7 @@ MukiDoc uses structured documents to keep a project's high-level context, such a
 
 ### Initializing a Project
 
-The repository provides `skills/mukidoc-init/`, containing the initialization Skill, scripts and the complete protocol template. The first version of both the Skill and the protocol is **0.1.0**.
+The repository provides `skills/mukidoc-init/`, containing the initialization Skill, scripts and the complete protocol template. The current version of both the Skill and the protocol is **0.2.0**.
 
 To run directly from this repository (requires Python 3.9+, no third-party dependencies):
 
@@ -22,9 +22,9 @@ You can also hand the whole `skills/mukidoc-init/` directory to an Agent that su
 
 ### Learning and Developing
 
-1. [Project overview](docs/OVERVIEW.md), [core philosophy](docs/PHILOSOPHY.md), [overall architecture](docs/ARCHITECTURE.md).
-2. Initialization design chain: [Design](docs/design/deliverable/BOOTSTRAP.md) → [System Design](docs/system_design/BOOTSTRAP.md) → [Implementation](docs/implementation/BOOTSTRAP.md).
-3. [Initialization evaluation and verification](docs/evaluation/design/bootstrap/EVALUATION.md), [development history](docs/DEVLOG.md).
+1. [Project overview](mukidoc/OVERVIEW.md), [core philosophy](mukidoc/PHILOSOPHY.md), [overall architecture](mukidoc/ARCHITECTURE.md).
+2. Initialization design chain: [Design](mukidoc/design/deliverable/BOOTSTRAP.md) → [System Design](mukidoc/system_design/BOOTSTRAP.md) → [Implementation](mukidoc/implementation/BOOTSTRAP.md).
+3. [Initialization evaluation and verification](mukidoc/evaluation/design/bootstrap/EVALUATION.md), [development history](mukidoc/DEVLOG.md).
 
 Maintain the protocol and verify the resource bundle:
 

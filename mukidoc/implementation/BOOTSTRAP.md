@@ -1,6 +1,6 @@
 # Bootstrap Implementation
 
-The current bootstrap deliverable is `skills/mukidoc-init/` in the repository; both the Skill version and the protocol version are `0.1.0`. The runtime program uses only the Python 3.9+ standard library, with no third-party runtime dependencies; this repository stores the source files and does not install them automatically into a personal Skill directory.
+The current bootstrap deliverable is `skills/mukidoc-init/` in the repository; both the Skill version and the protocol version are `0.2.0`. The runtime program uses only the Python 3.9+ standard library, with no third-party runtime dependencies; this repository stores the source files and does not install them automatically into a personal Skill directory.
 
 ### Code and Resources
 
@@ -19,7 +19,7 @@ python3 skills/mukidoc-init/scripts/init_mukidoc.py /path/to/project --dry-run
 
 The target path may not exist yet, and may contain spaces and Chinese characters. By default it fills in 9 files and 14 directories; the 11 leaf directories, when empty, get a `.gitkeep`, and `git init` is not required to have been run. A directory that already has content gets no marker added. An existing file is preserved as is, even when empty.
 
-The version marker is `<!-- MukiDoc protocol version: 0.1.0 -->`; only a single three-part numeric version is recognized, compared as a numeric tuple. `agent.state` returns `missing`, `current`, `older`, `unversioned`, `same_version_modified` or `newer`. The marker is for compatibility recognition and is not authentication of the file's origin.
+The version marker is `<!-- MukiDoc protocol version: 0.2.0 -->`; only a single three-part numeric version is recognized, compared as a numeric tuple. `agent.state` returns `missing`, `current`, `older`, `unversioned`, `same_version_modified` or `newer`. The marker is for compatibility recognition and is not authentication of the file's origin.
 
 After confirming an older-version update, pass `--update-agent --expected-agent-sha256 HASH`; after confirming a full replacement of an unversioned or same-version-modified file, pass `--replace-agent --expected-agent-sha256 HASH`. HASH must come from the report at review time. Replacement is refused when the target is a newer version. The backup is saved in the target root as `AGENTS.md.bak.<UTC timestamp>.<random suffix>`, preserving the original bytes and permissions; the temporary file replaces the target via `os.replace`.
 
@@ -45,4 +45,4 @@ python3 -B -m unittest discover -s tests -v
 python3 scripts/sync_skill_assets.py --check
 ```
 
-`tests/test_bootstrap.py` verifies in a temporary directory the complete skeleton, repeated runs, preservation of existing files, version judgment, explicit update and backup, stale fingerprints, preview and path conflicts, and also verifies that the Skill still runs when detached from the source repository. The Skill format is separately checked with the Skill Creator's `quick_validate.py`. The concrete evaluation commitments and this round's evidence are kept in `docs/evaluation/design/bootstrap/EVALUATION.md`.
+`tests/test_bootstrap.py` verifies in a temporary directory the complete skeleton, repeated runs, preservation of existing files, version judgment, explicit update and backup, stale fingerprints, preview and path conflicts, and also verifies that the Skill still runs when detached from the source repository. The Skill format is separately checked with the Skill Creator's `quick_validate.py`. The concrete evaluation commitments and this round's evidence are kept in `mukidoc/evaluation/design/bootstrap/EVALUATION.md`.

@@ -2,7 +2,7 @@
 name: mukidoc-init
 description: Bootstrap or complete a project's fixed MukiDoc directories and skeleton documents, install the bundled AGENTS.md, and detect older protocol versions so the user can decide whether to update. Use when the user asks to bootstrap, adopt, or complete the MukiDoc skeleton, or to update the MukiDoc protocol; it does not rewrite project knowledge, migrate old documents, or handle day-to-day development.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # MukiDoc Init

@@ -61,7 +61,7 @@ Split further only when different evaluation scopes genuinely exist; do not add 
 
 ### Evaluation and execution
 
-`docs/evaluation/` holds evaluation goals, methods and criteria; the execution code need not live alongside the documents.
+`mukidoc/evaluation/` holds evaluation goals, methods and criteria; the execution code need not live alongside the documents.
 
 What actually produces evidence should sit in the most natural engineering location, which can be tests, evals, benchmarks, scripts, CI, an Agent task, human evaluation or real-use results.
 
