@@ -2,7 +2,7 @@
 
 > 中文原版 / Chinese original: [mukidoc-zh](https://github.com/mukimasta/mukidoc-zh)
 
-**A structured documentation protocol designed for large projects.**
+**A structured documentation protocol designed for Agent-Native large projects.**
 
 MukiDoc uses structured documents to keep a project's high-level context, such as its philosophy, architecture and roadmap, together with the core design-chain documents across three layers: Design → System Design → Implementation. The MukiDoc protocol gives these documents a clear structure; following it, AI grasps the project as a whole and maintains the documents as it writes code, keeping them clear, elegant and tidy.
 
